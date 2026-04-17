@@ -126,6 +126,7 @@ ostream& operator<<(ostream& os, const Bucket& bucket)
 
 ostream& operator<<(ostream& os, const HashFile& hashFile)
 {
+    os << "This is the GOAT Hash File:" << endl;
     for (int i = 0; i < HASH_SIZE; ++i) {
         if (hashFile.buckets[i].numRecords > 0) {
             os << "Bucket " << i << ": " << hashFile.buckets[i] << endl;
